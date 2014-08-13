@@ -1,0 +1,11 @@
+package BIG_D;
+
+public class MyClass {
+
+	public static void main(String[] args);
+	
+	Integer i = new Integer(0);
+	i=32;
+	System.out
+	 
+}
