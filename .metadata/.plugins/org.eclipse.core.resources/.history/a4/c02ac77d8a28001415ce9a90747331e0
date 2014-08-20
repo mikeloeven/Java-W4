@@ -1,0 +1,76 @@
+import java.util.Scanner;
+
+import Ledger.Ledger;
+
+
+public class main {
+
+	
+	public static void main (String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Ledger System");
+		System.out.println("Menu\n1:Add Sale\n2:Number Of Sales\n3:Totals\n4:Average\n5:Exit");
+		String op;
+		Ledger Account = new Ledger(10);
+		do
+		{
+			System.out.println(">>");
+			op = keyboard.nextLine();
+			switch(op)
+			{
+			case "1":
+				//dostuff
+				System.out.println("\nEnter Sale");
+				if (Err.getValidDouble())
+				{
+					Account.addSale(Err.varDouble);
+					
+				}
+				else{}
+				
+				break;
+			case "2":
+				//dostuff
+				System.out.println("2");
+				break;
+			case "3":
+				//dostuff
+				System.out.println("3");
+				break;
+			case "4":
+				//dostuff
+				System.out.println("4");
+				break;
+			case "5":
+				//dostuff
+				System.out.println("5");
+				break;
+			default:
+				//
+				break;
+			
+		
+			}
+		
+		}while (!op.equals("5"));
+		System.out.println("Exit");
+		
+		
+		
+		
+		
+	}
+	
+	//prefabricated function i tossed in for pretty formatting
+	public static double round(double value, int places) 
+	{
+		    if (places < 0) throw new IllegalArgumentException();
+
+		    long factor = (long) Math.pow(10, places);
+		    value = value * factor;
+		    long tmp = Math.round(value);
+		    return (double) tmp / factor;
+	}
+	
+}

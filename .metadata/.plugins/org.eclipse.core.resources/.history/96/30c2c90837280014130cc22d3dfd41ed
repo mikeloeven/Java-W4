@@ -1,0 +1,18 @@
+
+public class main {
+
+	
+	public static void main (String[] args)
+	{
+		
+		Ledger.Ledger test = new Ledger.Ledger(20);
+		test.addSale(2.6);
+		test.addSale(5.0);
+		System.out.println(test.totalSales());
+		
+		
+		
+	}
+	
+	
+}

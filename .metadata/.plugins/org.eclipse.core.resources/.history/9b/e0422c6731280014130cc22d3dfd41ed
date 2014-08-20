@@ -1,0 +1,15 @@
+
+public class main {
+
+	
+	public static void main (String[] args)
+	{
+		
+		Ledger.Ledger test = new Ledger.Ledger();
+		System.out.println(test.getsalesize());
+		
+		
+	}
+	
+	
+}

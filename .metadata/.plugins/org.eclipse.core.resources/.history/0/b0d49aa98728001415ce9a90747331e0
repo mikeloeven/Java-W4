@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class main {
+
+	
+	public static void main (String[] args)
+	{
+		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Ledger System");
+		System.out.println("Menu\n1:Add Sale\n2:Number Of Sales\n3:Totals\n4:Average\n5:Exit");
+		
+		
+		
+		
+		
+		
+	}
+	
+	//prefabricated function i tossed in for pretty formatting
+	public static double round(double value, int places) 
+	{
+		    if (places < 0) throw new IllegalArgumentException();
+
+		    long factor = (long) Math.pow(10, places);
+		    value = value * factor;
+		    long tmp = Math.round(value);
+		    return (double) tmp / factor;
+	}
+	
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;Ledger.ledger.java&apos; to &apos;Ledger.java&apos;&#x0D;&#x0A;- Original project: &apos;W4_L1&apos;&#x0D;&#x0A;- Original element: &apos;Ledger.ledger.java&apos;&#x0D;&#x0A;- Renamed element: &apos;Ledger.Ledger.java&apos;" description="Rename compilation unit &apos;ledger.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src&lt;Ledger{ledger.java" name="Ledger.java" references="false" stamp="1408514328978" version="1.0"/>
+</session>

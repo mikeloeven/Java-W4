@@ -1,0 +1,23 @@
+package Ledger;
+
+public class Ledger{
+	
+	//PrivValue
+	private int arSize;
+	double[] sales = new double[arSize];
+	
+	
+	public Ledger()
+	{
+		arSize = 10;
+	}
+	
+	public Ledger(int ArSize){}
+	
+	public int getsalesize()
+	{
+		int size = sales.length;
+		return size;
+	}
+
+}

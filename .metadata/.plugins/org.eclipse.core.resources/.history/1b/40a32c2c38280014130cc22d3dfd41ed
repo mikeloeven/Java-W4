@@ -1,0 +1,50 @@
+package Ledger;
+
+public class Ledger{
+	
+	//PrivValue
+	private double[] sales;
+	private static int salesMade = 0;
+	//constructor
+	public Ledger()
+	{
+		this.sales=new double[10];
+	}
+	
+	public Ledger(int maxSales)
+	{
+		this.sales=new double[maxSales];
+	}
+	
+	//methods
+	//add a sale to array
+	public void addSale(double d)
+	{
+		System.out.println(sales.length);
+		System.out.println(salesMade);
+		if(salesMade>(sales.length-1))
+		{
+			System.out.println("Ledger Is Full, Value Has Not Been Saved");
+		}
+		else
+		{
+		this.sales[salesMade]=d;
+		salesMade++;
+		}
+	}
+	
+	
+	//returns max size of array
+	public int getLedgerMax()
+	{
+		int size = sales.length;
+		return size;
+	}
+	//lists total sales
+	public int totalSales()
+	{
+		return (salesMade+1);
+	}
+	
+
+}

@@ -1,0 +1,21 @@
+
+public class main {
+
+	
+	public static void main (String[] args)
+	{
+		
+		Ledger.Ledger test = new Ledger.Ledger(3);
+		test.addSale(2.6);
+		test.addSale(5.0);
+		test.addSale(6.4);
+		test.addSale(5.3);
+		System.out.println(test.totalSales());
+		System.out.println(test.getTotalSales());
+		
+		
+		
+	}
+	
+	
+}

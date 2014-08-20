@@ -1,0 +1,45 @@
+import java.util.Scanner;
+
+
+public class Err {
+	//Input Based Error Handling
+	public static double varDouble;
+	public static int varInt;
+	public static String varString;
+	
+	
+	public static boolean getValidInt()
+	{
+		try 
+		{
+		Scanner keyboard = new Scanner(System.in);
+		varInt=Integer.parseInt(keyboard.nextLine());
+		keyboard.close();
+		return true;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Invalid Int");
+			return false;
+		}
+	}
+	
+	public static boolean getValidDouble()
+	{
+		try 
+		{
+		Scanner keyboard = new Scanner(System.in);
+		varDouble=Double.parseDouble(keyboard.nextLine());
+		keyboard.close();
+		return true;
+		}
+		catch(Exception e)
+		{
+			System.out.println("Invalid Double");
+			return false;
+		}
+	}
+	
+	
+
+}

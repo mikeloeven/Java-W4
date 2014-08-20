@@ -1,0 +1,32 @@
+
+public class main {
+
+	
+	public static void main (String[] args)
+	{
+		
+		Ledger.Ledger test = new Ledger.Ledger(3);
+		test.addSale(2.6);
+		test.addSale(5.0);
+		test.addSale(6.4);
+		test.addSale(5.3);
+		System.out.println(test.getNumberOfSales());
+		System.out.println(round(test.getTotalSales(),2));
+		System.out.println(round(test.getAverageSale(),2));
+		
+		
+		
+	}
+	
+	//prefabricated function i tossed in for pretty formatting
+	public static double round(double value, int places) 
+	{
+		    if (places < 0) throw new IllegalArgumentException();
+
+		    long factor = (long) Math.pow(10, places);
+		    value = value * factor;
+		    long tmp = Math.round(value);
+		    return (double) tmp / factor;
+	}
+	
+}
