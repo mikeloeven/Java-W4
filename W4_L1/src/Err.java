@@ -12,7 +12,6 @@ public class Err {
 	{
 		try 
 		{
-		System.out.println(">>");
 		varInt=Integer.parseInt(input);
 		return true;
 		}
