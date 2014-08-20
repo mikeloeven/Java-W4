@@ -4,4 +4,5 @@
 <fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="Ledger.Ledger"/>
 <fullyQualifiedTypeName name="Err"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.ValueOutputStream"/>
 </qualifiedTypeNameHistroy>

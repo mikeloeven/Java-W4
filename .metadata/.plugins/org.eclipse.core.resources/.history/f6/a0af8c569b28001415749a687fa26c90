@@ -1,0 +1,36 @@
+
+public class main {
+	
+	
+
+	public static void main (String[] args)
+	{
+		boolean toggle = true;
+		
+		//Start Array lockers 0 = closed 1 = open
+		System.out.println("Initializing Locker State");		
+		boolean[] lockers = new boolean[100];
+		for (boolean i:lockers)
+		{
+			System.out.println(i);
+		}
+		System.out.println("Student One Pass");
+		
+		for(boolean i: lockers)
+		{
+			i != toggle;
+			System.out.println(i);
+		}
+		System.out.println("xor test");
+		for(boolean i: lockers)
+		{
+			i != toggle;
+			System.out.println(i);
+		}
+		
+		
+		
+	}
+
+
+}

@@ -1,0 +1,23 @@
+
+public class main {
+	
+	
+
+	public static void main (String[] args)
+	{
+	
+		
+		//Start Array lockers 0 = closed 1 = open
+		boolean[] lockers = new boolean[100];
+		System.out.println("Student One Pass");
+		for(boolean i: lockers)
+		{
+			i^=true;
+		}
+		
+		
+		
+	}
+
+
+}

@@ -1,0 +1,50 @@
+
+public class main {
+	
+	public static void printArr(boolean[] arr)
+	{
+		for(boolean i : arr)
+		{
+			System.out.println(arr);
+		}
+	}
+
+	public static void main (String[] args)
+	{
+		//Start Array lockers 0 = closed 1 = open
+		System.out.println("Initializing Locker State");		
+		boolean[] lockers = new boolean[100];
+		
+		
+		
+		for (boolean i:lockers)
+		{
+			System.out.println(i);
+		}
+		printArr(lockers);
+		
+		//XOR entire array  
+		System.out.println("Student One Pass");
+		
+		
+		for(int i=0;i<lockers.length;i++)
+		{
+			lockers[i] ^= true;
+			
+		}
+		
+		//Student Two Pass Start at array location 1 XOR every 2 lockers 
+		System.out.println("xor test");
+		
+		
+		for(int i=1;i<lockers.length;i+=2)
+		{
+			lockers[i] ^= true;
+		}
+		
+		
+		
+	}
+
+
+}
